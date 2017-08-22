@@ -1,13 +1,3 @@
----
-title: "Untitled"
-author: "O. Denas"
-date: "8/22/2017"
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 # Inference and Representation (DS-GA-1005, CSCI-GA.2569)
 
