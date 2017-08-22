@@ -1,4 +1,16 @@
+---
+title: "Untitled"
+author: "O. Denas"
+date: "8/22/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
 # Inference and Representation (DS-GA-1005, CSCI-GA.2569)
+
 #### *Course staff:*
 | | Name | E-mail (@cs.nyu.edu) |
 |----------|---------------|----------------|
@@ -15,6 +27,7 @@ We will study latent variable graphical models (Latent Dirichlet Allocation, Fac
 
 ###Lecture Location
 Monday, 5:10-7:00pm, in Warren Weaver Hall 1302
+
 ###[Recitation/Laboratory](https://github.com/inf16nyu/home/tree/master/labs) (required for all students)
 Wednesdays, 7:10-8:00pm in [Meyer Hall of Physics](http://physics.as.nyu.edu/object/physics.directions) 121 
 
@@ -36,8 +49,8 @@ Most of the lectures and labs' videos will be posted to NYU Classes. Note, howev
 | Week        | Lecture Date           | Topic       |  Reference                    |  Deliverables  |
 | ---------------|----------------| ------------|---------------------------------|---------------|
 | 2 | 9/12  | **Lec1** Intro and Logistics. Bayesian Networks. [Slides](https://github.com/inf16nyu/home/blob/master/slides/lecture1.pdf) | Murphy [Chapter 1](http://www.cs.ubc.ca/~murphyk/MLbook/pml-intro-22may12.pdf) (optional; review for most)<br /><br />[Notes on Bayesian networks](https://people.eecs.berkeley.edu/~jordan/prelims/chapter2.pdf) (Sec. 2.1)<br /><br />[Algorithm for d-separation](http://pgm.stanford.edu/Algs/page-75.pdf) (optional)| [PS1](https://github.com/inf16nyu/home/blob/master/hw/ps1.pdf), due 9/19 |
-| 3 | 9/19  | **Lec2** Undirected Graphical Models. Markov Random Fields. Ising Model. Applications to Statistical Physics. [Slides](https://github.com/inf16nyu/home/blob/master/slides/lecture2.pdf) |[Notes on MRFs](https://people.eecs.berkeley.edu/~jordan/prelims/chapter2.pdf) (Sec. 2.2-2.4)<br /><br /> [Notes on exponential families](https://people.eecs.berkeley.edu/~jordan/courses/260-spring10/other-readings/chapter8.pdf) |  [PS2](https://github.com/inf16nyu/home/blob/master/hw/ps2/ps2.pdf) \[[data](https://github.com/inf16nyu/home/blob/master/hw/ps2/text_data.csv)\], due 9/26 |
-| 4 | 9/26 | **Lec3** Introduction to Inference. Variable elimination. [Slides](https://github.com/inf16nyu/home/blob/master/slides/lecture3.pdf) | Murphy [Sec. 20.3](http://site.ebrary.com/lib/nyulibrary/reader.action?ppg=745&docID=10597102&tm=1474470463032)<br /><br /> [Notes on variable elimination](https://people.eecs.berkeley.edu/~jordan/prelims/chapter3.pdf) (optional)  | [PS3](https://github.com/inf16nyu/home/blob/master/hw/ps3/ps3.pdf) \[[data](https://github.com/inf16nyu/home/blob/master/hw/ps3/ps3_data.zip)\], due 10/3 |
+| 3 | 9/19  | **Lec2** Undirected Graphical Models. Markov Random Fields. Ising Model. Applications to Statistical Physics. [Slides](https://github.com/inf16nyu/home/blob/master/slides/lecture2.pdf) |[Notes on MRFs](https://people.eecs.berkeley.edu/~jordan/prelims/chapter2.pdf) (Sec. 2.2-2.4)<br /><br /> [Notes on exponential families](https://people.eecs.berkeley.edu/~jordan/courses/260-spring10/other-readings/chapter8.pdf) |  [PS2](https://github.com/inf16nyu/home/blob/master/hw/ps2/ps2.pdf) [data](https://github.com/inf16nyu/home/blob/master/hw/ps2/text_data.csv), due 9/26 |
+| 4 | 9/26 | **Lec3** Introduction to Inference. Variable elimination. [Slides](https://github.com/inf16nyu/home/blob/master/slides/lecture3.pdf) | Murphy [Sec. 20.3](http://site.ebrary.com/lib/nyulibrary/reader.action?ppg=745&docID=10597102&tm=1474470463032)<br /><br /> [Notes on variable elimination](https://people.eecs.berkeley.edu/~jordan/prelims/chapter3.pdf) (optional)  | [PS3](https://github.com/inf16nyu/home/blob/master/hw/ps3/ps3.pdf) [data](https://github.com/inf16nyu/home/blob/master/hw/ps3/ps3_data.zip), due 10/3 |
 | 5 | 10/3 | **Lec4** Modeling Text Data. Topic Models. Latent Dirichlet Allocation. Gibbs sampling. [Slides](https://github.com/inf16nyu/home/blob/master/slides/lecture4.pdf)  | Barber [27.1-27.3.1](http://web4.cs.ucl.ac.uk/staff/D.Barber/textbook/181115.pdf)<br /><br />Murphy [Sec. 24.1-24.2.4](http://site.ebrary.com/lib/nyulibrary/reader.action?ppg=868&docID=10597102&tm=1474471957223) <br /><br />[Introduction to Probabilistic Topic Models](http://www.cs.princeton.edu/~blei/papers/Blei2011.pdf) <br /><br /> Explore topic models of: [politics over time](https://s3.amazonaws.com/smapp/lda/index.html), [state-of-the-union addresses](http://mimno.infosci.cornell.edu/jsLDA/), [Wikipedia](http://www.princeton.edu/~achaney/tmve/wiki100k/browse/topic-presence.html) | [PS4](https://github.com/inf16nyu/home/blob/master/hw/ps4/), due 10/17 <br /><br />[Project Proposal](https://github.com/inf16nyu/home/raw/master/project/final_project_proposal_inf.pdf), due 10/24 |
 | 6 | 10/10 |  No lecture (there *is* lab). |  |  | 
 | 7 |  10/17 | **Lec5** Modeling Survey Data. Factor Analysis. PCA. ICA. [Slides](https://github.com/inf16nyu/home/blob/master/slides/lecture5.pdf) | [Elements of Statistical Learning, Ch.14](http://statweb.stanford.edu/~tibs/ElemStatLearn/)<br /><br /> [Finding Structure in Randomness (...), Halko, Martinsson, Tropp](https://arxiv.org/pdf/0909.4061v2.pdf) |  [PS5](https://github.com/inf16nyu/home/blob/master/hw/ps5/), due 10/24 |
@@ -54,6 +67,7 @@ Most of the lectures and labs' videos will be posted to NYU Classes. Note, howev
 
 ###Bibliography
 There is no required book. Assigned readings will come from freely-available online material.
+
 #### Core Materials
   - Kevin Murphy, [Machine Learning: a Probabilistic Perspective](http://www.cs.ubc.ca/%7Emurphyk/MLbook/index.html), MIT Press, 2012. You can read this online for free from [NYU Libraries](http://site.ebrary.com/lib/nyulibrary/detail.action?docID=10597102). We recommend the latest (4th) printing, as earlier editions had many typos. You can tell which printing you have as follows: check the inside cover, below the "Library of Congress" information. If it says "10 9 8 ... 4" you've got the (correct) fourth print.
   - Daphne Koller and Nir Friedman, [Probabilistic Graphical Models: Principles and Techniques](http://pgm.stanford.edu/), MIT Press, 2009.
